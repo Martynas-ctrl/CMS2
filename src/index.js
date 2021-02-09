@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import App from "./App";
+import "./index.css";
 
 const client = new ApolloClient({
   uri: "https://api-eu-central-1.graphcms.com/v2/ckjllfp2n3qu301z01aevdj9a/master",
@@ -12,7 +12,7 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-      <App />
+    <App />
   </ApolloProvider>,
   document.getElementById("root")
 );

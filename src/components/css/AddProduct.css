@@ -36,3 +36,9 @@ input, textarea {
 #cancel_button:hover {
   background-color: rgb(240, 242, 247);
 }
+
+.button_add {
+  height: 50px;
+  width: 150px;
+  margin: 25px;
+}
